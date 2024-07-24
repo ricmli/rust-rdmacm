@@ -1,0 +1,23 @@
+[package]
+name = "rdmacm"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+description = "RDMA_CM bindings for Rust"
+repository = "https://github.com/ricmli/rust-rdmacm"
+authors = ["Ric Li <ricmli@outlook.com>"]
+readme = "README.md"
+
+keywords = ["rdma", "rdmacm", "networking", "ffi"]
+categories = ["network-programming", "api-bindings"]
+
+[lib]
+name = "rdmacm"
+path = "src/rdmacm/lib.rs"
+
+[dependencies]
+
+[dependencies.rdmacm-sys]
+path = "rdmacm-sys"
+version = "^0.1.0"
